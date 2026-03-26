@@ -1,0 +1,23 @@
+# Virtual Environment
+falcon7b/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local model downloads (MLX usually caches in ~/.cache, but just in case)
+*.bin
+*.pt
+*.safetensors
+
+# OS specific
+.DS_Store
+
+# MLX specific metadata and logs
+*.json
+*.txt
+!README.md
+!requirements.txt
