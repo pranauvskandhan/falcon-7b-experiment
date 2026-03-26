@@ -7,7 +7,7 @@ The goal was to reproduce the inference capabilities of a 7-billion parameter mo
 
 ## Model Source & Lineage
 - **Base Model:** [tiiuae/falcon-7b-instruct](https://huggingface.co/tiiuae/falcon-7b-instruct)
-- **Developer:** Technology Innovation Institute (TII)
+- **Developer:** [Technology Innovation Institute (TII)](https://www.tii.ae)
 - **Architecture:** Causal decoder-only transformer featuring:
   - **Multi-Query Attention:** Shared keys and values across heads to minimize memory bandwidth.
   - **RefinedWeb Training:** Built on 1,500B tokens of high-quality web data.
