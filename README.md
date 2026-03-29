@@ -20,6 +20,10 @@ The implementation was validated with the following metrics:
 - **Prompt Processing:** ~4.65 tokens per second.
 - **Memory Efficiency:** Peak active RAM usage stayed under 5GB, demonstrating high stability for local deployment.
 
+## Baseline Accuracy Evaluation
+
+This repository includes a small baseline accuracy evaluation of Falcon-7B-Instruct under constrained local inference (MLX, 4-bit, CPU). Basic factual and reasoning questions were tested with a fixed max token limit of 80, and observed strengths, failures, and limitations are documented in [accuracy_notes.md](https://github.com/pranauvskandhan/falcon-7b-experiment/blob/main/evaluation/accuracy_notes.md).
+
 ## Setup & Execution
 
  **Environment Initialization:**
@@ -28,8 +32,3 @@ The implementation was validated with the following metrics:
    source falcon7b/bin/activate
    pip install mlx-lm psutil
 
-
-
-## Baseline Accuracy Evaluation
-
-This repository includes a small baseline accuracy evaluation of Falcon-7B-Instruct under constrained local inference (MLX, 4-bit, CPU). Basic factual and reasoning questions were tested with a fixed max token limit of 80, and observed strengths, failures, and limitations are documented in [accuracy_notes.md](https://github.com/pranauvskandhan/falcon-7b-experiment/blob/main/evaluation/accuracy_notes.md).
