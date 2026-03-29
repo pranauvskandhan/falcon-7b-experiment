@@ -6,7 +6,7 @@ from mlx_lm.sample_utils import make_sampler
 
 def main():
     model_id = "mlx-community/Falcon-H1-7B-Instruct-4bit"
-    prompt_text = "Who is Stefan Salvatore?"
+    prompt_text = "What is photosynthesis?"
 
     print(f"--- System Check ---")
     print(f"Available RAM: {psutil.virtual_memory().available / (1024**3):.2f} GB")
@@ -36,7 +36,7 @@ def main():
         model, 
         tokenizer, 
         prompt=prompt, 
-        max_tokens=200, 
+        max_tokens=80, 
         sampler=sampler, 
         verbose=True 
     )
